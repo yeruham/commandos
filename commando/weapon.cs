@@ -16,7 +16,7 @@ public class Weapon
     public void Shoot()
     {
         this.numBalls--;
-        Console.WriteLine("a shot was fired.");
+        Console.WriteLine($"a shot from {this.name} was fired.");
     }
 
 

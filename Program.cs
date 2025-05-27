@@ -10,6 +10,12 @@ namespace commandos
     {
         static void Main(string[] args)
         {
+            Commando avi = new Commando("avi", "x");
+            Weapon gun = new Weapon("gun", "refal", 20);
+            Console.WriteLine(avi.codeName);
+            avi.codeName = "yeruham";
+            avi.Attack();
+            gun.Shoot();
         }
     }
 }
