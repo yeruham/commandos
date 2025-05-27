@@ -50,7 +50,7 @@
     <Compile Include="commando\weapon.cs" />
     <Compile Include="Factory\CommandFactory.cs" />
     <Compile Include="Factory\EnemyFactory.cs" />
-    <Compile Include="Factory\IFactory.cs" />
+    <Compile Include="Factory\CommandFactoryBase.cs" />
     <Compile Include="Factory\WeaponFactory.cs" />
     <Compile Include="Game\Game.cs" />
     <Compile Include="Program.cs" />

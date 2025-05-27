@@ -2,7 +2,7 @@
 
 public class WeaponFactory
 {
-    private List<Weapon> weapons = new List<Weapon>();
+    public List<Weapon> weapons = new List<Weapon>();
 
     public Weapon CreatWeapon(string name, string manufacturer, int numBalls)
     {

@@ -19,15 +19,18 @@ namespace commandos
             AirCommando yeruham = new AirCommando("yeruham", "w");
             //yeruham.Parachuting();
             //yeruham.Walk();
-            yeruham.Attack();
+            //yeruham.Attack();
             SeaCommando aviv = new SeaCommando("aviv", "a");
             Commando[] commandos = {avi, yeruham, aviv};
-            foreach (Commando c in commandos)
-            {
-                c.Attack();
-            }
-
+            //foreach (Commando c in commandos)
+            //{
+            //    c.Attack();
+            //}
+            CommandoFactory factory = new CommandoFactory();
+            Commando commando = factory.CreatCommando("yeruham", "x");
+            factory.AddCommando(commando);
 
         }
+
     }
 }

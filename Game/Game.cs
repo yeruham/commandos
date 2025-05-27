@@ -15,7 +15,7 @@ public class Game
 
     public void CreatAndAddCommand(string name, string codeName, string type)
     {
-        Commando commando = commandoFighters.CreatCommando(name, codeName, type);
+        Commando commando = commandoFighters.CreatCommando(name, codeName);
         commandoFighters.AddCommando(commando);
     }
 
