@@ -13,9 +13,9 @@ public class Game
         enemies.AddEnemy(enemy);
     }
 
-    public void CreatAndAddCommand(string name, string codeName)
+    public void CreatAndAddCommand(string name, string codeName, string type)
     {
-        Commando commando = commandoFighters.CreatCommando(name, codeName);
+        Commando commando = commandoFighters.CreatCommando(name, codeName, type);
         commandoFighters.AddCommando(commando);
     }
 
