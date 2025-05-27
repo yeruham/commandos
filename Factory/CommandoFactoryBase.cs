@@ -1,12 +1,7 @@
 ﻿using System.Collections.Generic;
 
-public abstract class CommandFactoryBase
+public interface  CommandoFactoryBase
 {
-    protected List<Commando> commandoFighters  = new List<Commando>();
+    Commando CreatCommando(string name, string codeName);
 
-    public abstract Commando CreatCommando(string name, string codeName);
-
-    public abstract void AddCommando(Commando commando);
-
-    public abstract List<Commando> getCommandoFighters();
 }

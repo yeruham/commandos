@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 
-public class CommandoFactory : CommandoFactoryBase
+public class CommandoFactory : ListCommando, CommandoFactoryBase
 {
 
-    public override Commando CreatCommando(string name, string codeName)
+    public  Commando CreatCommando(string name, string codeName)
     {
         Commando newCommando = new Commando(name, codeName);
         return newCommando;
