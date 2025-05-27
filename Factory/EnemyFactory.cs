@@ -12,12 +12,12 @@ public class EnemyFactory
 
     public void AddEnemy(Enemy enemy)
     {
-        enemies.Add(enemy);
+        this.enemies.Add(enemy);
     }
 
     public List<Enemy> getEnemies()
     {
-        return enemies;
+        return this.enemies;
     }
 
 }

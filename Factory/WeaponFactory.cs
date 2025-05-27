@@ -12,12 +12,12 @@ public class WeaponFactory
 
     public void AddWeapon(Weapon weapon)
     {
-        weapons.Add(weapon);
+        this.weapons.Add(weapon);
     }
 
     public List<Weapon> getWeaponss()
     {
-        return weapons;
+        return this.weapons;
     }
 
 }
