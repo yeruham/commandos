@@ -7,6 +7,11 @@ public class SeaCommando : Commando
     public void Swimming()
     {
         this.status = " swimming";
-        Console.WriteLine($"the commando is {this.status}");
+        Console.WriteLine($"the commando {this.codeName} is {this.status}");
+    }
+
+    public override void Attack()
+    {
+        Console.WriteLine($"the sea commando {this.codeName} attack!");
     }
 }

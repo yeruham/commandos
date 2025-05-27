@@ -26,7 +26,7 @@ public class Commando
         Console.WriteLine($"the commando {this.codeName} is {this.status}");
     }
 
-    public void Attack()
+    public virtual void Attack()
     {
         Console.WriteLine($"the commando {this.codeName} attack!");
     }

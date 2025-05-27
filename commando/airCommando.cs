@@ -6,7 +6,12 @@ public class AirCommando : Commando
 
     public void Parachuting()
     {
-        this.status = "Parachuting";
-        Console.WriteLine($"the commando is {this.status}");
+        this.status = "parachuting";
+        Console.WriteLine($"the commando {this.codeName} is {this.status}");
+    }
+
+    public override void  Attack()
+    {
+        Console.WriteLine($"the air command {this.codeName} attack!");
     }
 }

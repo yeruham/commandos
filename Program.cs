@@ -12,10 +12,22 @@ namespace commandos
         {
             Commando avi = new Commando("avi", "x");
             Weapon gun = new Weapon("gun", "refal", 20);
-            Console.WriteLine(avi.codeName);
-            avi.codeName = "yeruham";
-            avi.Attack();
-            gun.Shoot();
+            //Console.WriteLine(avi.codeName);
+            avi.codeName = "@";
+            //avi.Attack();
+            //gun.Shoot();
+            AirCommando yeruham = new AirCommando("yeruham", "w");
+            //yeruham.Parachuting();
+            //yeruham.Walk();
+            yeruham.Attack();
+            SeaCommando aviv = new SeaCommando("aviv", "a");
+            Commando[] commandos = {avi, yeruham, aviv};
+            foreach (Commando c in commandos)
+            {
+                c.Attack();
+            }
+
+
         }
     }
 }
